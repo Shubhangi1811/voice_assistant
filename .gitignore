@@ -1,1 +1,5 @@
 /envvoiceassistant
+/engine/cookies.json
+contacts.csv
+voice_assistant.db
+/engine/__pycache__

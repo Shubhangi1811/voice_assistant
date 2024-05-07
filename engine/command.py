@@ -6,6 +6,7 @@ import pywhatkit as kit
 from engine.helper import *
 
 def speak(text):
+    text = str(text)
     engine = pyttsx3.init('sapi5')
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[1].id)
@@ -72,7 +73,9 @@ def takeAllCommands(message=1):
                     
                 whatsApp(contact_no, query, message, name)
         else:
-            print("Not running")
+            print("hi")
+            from engine.features import chatBot
+            chatBot(query)
     except:
         print("Error")
     eel.ShowHood()
